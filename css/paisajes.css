@@ -1,3 +1,63 @@
 @charset "utf-8";
 /* CSS Document */
 
+.gal{
+		width: 100%;
+		height: auto;
+		background-color: #d5c75f;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around
+}
+
+.gal figure{
+	width: 80%;
+	margin: 40px 0;
+	text-align: center;
+}
+	
+.gal img {
+	width: 90%;
+	height: auto;
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+.gal figure:first-child img{
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+}
+	
+figure.pic:nth-child(even)>img{
+	filter: grayscale(90%);
+	-webkit-filter: grayscale(100%);
+}
+
+figure:nth-child(3) img{
+	filter: sepia(90%);
+	-webkit-filter: sepia(90%);
+}
+
+@media (min-width:900px){
+	
+	.gal{
+		width: 100%;
+		height: 450px;
+		background-color: #d5c75f;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+	
+	.gal figure{
+		width: 30%;
+		margin: 0px;
+		text-align: center;
+	}
+	
+	img {
+		width: 90%;
+		height: auto;
+	}
+	
+}
