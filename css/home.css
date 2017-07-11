@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+.secPpal{
+	width: 100%;
+	
+	background-color: #82c3a6;
+}
+
+
+.secPpal figure{
+	padding: 5%;
+}
+
+
+.secPpal figure img{
+	width: 100%;
+}
+
+
+.secSec{
+	width: 100%;
+	
+	background-color: #d5c75f;
+	padding: 50px 0;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.secSec figure{
+	padding: 5%;
+}
+
+
+.uno img{
+	width: 100%;
+}
+
+
+.dos img{
+	width: 100%;
+}
+
+.uno figcaption, .dos figcaption{
+	color: black;
+	text-align: center;
+}
+
+.uno a, .dos a{
+	text-decoration: none;
+}
+
+.secPpal figure img, .secSec figure img{
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+
+.uno a img:hover{
+	transform: rotate(10deg);	
+	box-shadow: 2px 2px 2px #82c3a6; 
+}
+
+
+.dos a img:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+
+@media (min-width:900px){
+	.secSec{
+		flex-flow: row nowrap;
+		justify-content:space-around;
+	}
+}

@@ -6,4 +6,164 @@
 	src: url('Dancing Script.ttf');
 }
 
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Dancing Script';
+	background-color: black;
+	}
+
+
+#contenido{
+	
+	width:100%;
+		
+	display: flex;
+	flex-direction: column;
+}
+
+
+header{
+	
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0;	
+	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+
+header h1{
+	color: white;
+	text-shadow: 2px 2px 0px #02010a;
+	text-align: center;
+	
+	font-size: 36px;
+	align-self: center;
+	margin:10px auto;
+}
+
+
+header a{
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	margin:10px auto;
+}
+
+
+nav.links{
+	width: 40%;
+		
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+}
+
+footer{
+	padding: 20px;
+	background-color: #C6d5c5;
+	border-radius: 0 0 10px 10px;
+}
+
+.filaRedes figure{
+		height: 30px;
+
+		display:flex;
+		flex-direction: row;
+}
+
+.redes img{
+	transform: scale(0.5, 0.5);
+}
+
+
+img.logo{
+	width: 35px;
+	height:auto;
+	align-self:center;	
+}
+
+
+a.logo{
+	
+	color: black;
+	text-decoration: none;
+	align-self: center;
+}
+	
+
+.footerlink a{
+	text-decoration: none;
+	color:#5b7989;
+}	
+
+
+@media (max-width:899px){
+	
+	
+	footer{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+	}
+
+	footer .col {
+		width: 40%;
+		height: auto;
+		padding: 10px;
+	}
+
+}
+
+
+@media (min-width:900px){
+	
+	body{
+		width: 900px;
+		margin: 5% auto;
+	}
+
+	header{
+		
+		height: 100px;
+
+		display: flex;
+		flex-flow: row nowrap;		
+		align-items:baseline;
+		justify-content: space-between;
+
+	}
+
+	nav.links{
+		width: 28%;
+		margin-right: 5%;		
+
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.redes img{
+		transform: scale(0.6, 0.6);
+	}
+
+	footer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+	}
+
+	footer .col {
+		width: 20%;
+		height: auto;
+	}
+	
+}
+
+
 
