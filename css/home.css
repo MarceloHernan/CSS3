@@ -59,14 +59,25 @@
 
 
 .uno a img:hover{
-	transform: rotate(10deg);	
+	transform: rotate(10deg);
+	transition-duration: 1s;
 	box-shadow: 2px 2px 2px #82c3a6; 
 }
 
+.uno a img:not(hover){
+	transform: rotate(0deg);
+	transition-duration: 1s;
+}
 
 .dos a img:hover{
 	transform: translate(20px, -5px);
+	transition-duration: 1s;
 	box-shadow: 2px 2px 2px #82c3a6;
+}
+
+.dos a img:not(hover){
+	transform: translate(0px,0px);
+	transition-duration: 1s;
 }
 
 @media (min-width:900px){
